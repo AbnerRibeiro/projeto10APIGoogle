@@ -5,38 +5,70 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Document</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/stylus.css">
 	</head>
 	<body>
-		<header>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <header class="bg-dark">
+	    <nav class="navbar navbar-expand-lg navbar-light mb-5">
+	    
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar" aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
+	        <span class="navbar-toggler-icon"></span>
+	      </button>
+	      <div class="collapse navbar-collapse d-flex justify-content-around" id="textoNavbar">
+	        
+	        <span>
+	        </span>
+	        
+	        <img class="rounded-circle" src="https://source.unsplash.com/random/100x100" alt="">
 
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar" aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
-			    <span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse justify-content-around" id="textoNavbar">
-			  	<span></span>
-			    <span class="navbar-text">
-			      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuw2poRrwKrGhSIbTvfRY9iV6oDuT9dG3qq-8s0_VVbEmKkizj" class="rounded-circle" alt="">
-			    </span>
-				<div>
-				    <ul class="navbar-nav mr-auto">
-				      <li class="nav-item active">
-				        <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="#">Destaques</a>
-				      </li>
-				    </ul>
-			  	</div>
-			  </div>
-			</nav>
-		</header>
-		<section>
-			<article></article>
-			<article></article>
-		</section>
-	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	        <div>
+	          <ul class="navbar-nav mr-auto">
+	            <li class="nav-item active">
+	              <a class="nav-link" href="#" style="color: white">Home <span class="sr-only">(Página atual)</span></a>
+	            </li>
+	            <li class="nav-item">
+	              <a class="nav-link" href="#" style="color: white">Destaques</a>
+	            </li>
+	            <li class="nav-item">
+	              <a class="nav-link" href="#" style="color: white">Preços</a>
+	            </li>
+	          </ul>
+	        </div>
+	      </div>
+	    </nav>
+	  </header>
+
+	  <section class="container">
+	  	<div id="map" class="bg-dark">
+	  		
+	  	</div>
+<!-- 	    <div class="row">
+	      <div class="col-7 bg-dark" id="map" style="height: 500px">
+	        
+	      </div>
+	      <div class="col-1"></div>
+	      <div class="col-4 bg-dark" style="height: 300px">
+	        
+	      </div>
+	    </div>
+
+	    <div class="row pt-5">
+	      <div class="col-12 text-center">
+	        <input type="text"> <input type="text"> <input type="submit">      
+	      </div>
+	    </div>
+
+	    <div class="row pt-5">
+	      <div class="col-12 bg-dark" style="height: 300px">
+	        
+	      </div>
+	    </div> -->
+	  </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBXEW-Cff2eINK2r7aJwDQ_fk2wG1AL-w&callback=initMap" 
+    async defer></script>
+    <script src="js/main.js"></script>
 	</body>
 </html>
